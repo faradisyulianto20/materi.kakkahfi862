@@ -60,7 +60,7 @@
             text-align: center;
             border-radius: 10px;
             flex-direction: column;
-            background-image: url(../pattern.svg);
+            background-image: url(pattern.svg);
             background-size: 75%;
             gap: 50px;
         }
@@ -102,7 +102,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url(../pattern.svg);
+            background-image: url(pattern.svg);
             background-size: 75%;
         }
 
@@ -339,14 +339,14 @@
             text: '',
             confirmButtonColor: '#7B6CD9'
         }).then(() => {
-            window.location.href = "soal2.html";
+            window.location.href = "soal5.html";
         });
     } else {
         errorSound.play();
         Swal.fire({
             title: '❌ Salah kocak!',
             text: '',
-            imageUrl: '../salah.jpg',
+            imageUrl: 'salah.jpg',
             imageWidth: 200,
             imageHeight: 200,
             confirmButtonColor: '#7B6CD9',
@@ -372,9 +372,10 @@
             </div>
         </div>
     </div>
-    <audio id="success-sound" src="../success.wav" preload="auto"></audio>
-    <audio id="error-sound" src="../error.wav" preload="auto"></audio>
-    <audio id="warning-sound" src="../warning.wav" preload="auto"></audio>
+    <audio id="success-sound" src="success.wav" preload="auto"></audio>
+    <audio id="error-sound" src="error.wav" preload="auto"></audio>
+    <audio id="warning-sound" src="warning.wav" preload="auto"></audio>
 </body>
     
+
 </html>
